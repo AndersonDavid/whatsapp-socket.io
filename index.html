@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Whatsapp</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.dev.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
@@ -23,88 +24,25 @@
 
         <div id="chat">
 
-                <div class="balloon received">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nesciunt quo
-                        <span class="time-done">
-                            <span class="time">22:10</span>
-                            <span class="visualized material-icons">done_all</span>
-                        </span>
-                    </p>
-                </div>
-                <div class="balloon sended">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nesciunt quo
-                        <span class="time-done">
-                            <span class="time">22:10</span>
-                            <span class="visualized material-icons">done_all</span>
-                        </span>
-                    </p>
-                </div>
-
-                <div class="balloon received">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nesciunt quo
-                        <span class="time-done">
-                            <span class="time">22:10</span>
-                            <span class="visualized material-icons">done_all</span>
-                        </span>
-                    </p>
-                </div>
-                <div class="balloon sended">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nesciunt quo
-                        <span class="time-done">
-                            <span class="time">22:10</span>
-                            <span class="visualized material-icons">done_all</span>
-                        </span>
-                    </p>
-                </div>
-
-                <div class="balloon received">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nesciunt quo
-                        <span class="time-done">
-                            <span class="time">22:10</span>
-                            <span class="visualized material-icons">done_all</span>
-                        </span>
-                    </p>
-                </div>
-                <div class="balloon sended">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nesciunt quo
-                        <span class="time-done">
-                            <span class="time">22:10</span>
-                            <span class="visualized material-icons">done_all</span>
-                        </span>
-                    </p>
-                </div>
-
-                <div class="balloon received">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nesciunt quo
-                        <span class="time-done">
-                            <span class="time">22:10</span>
-                            <span class="visualized material-icons">done_all</span>
-                        </span>
-                    </p>
-                </div>
-                <div class="balloon sended">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nesciunt quo
-                        <span class="time-done">
-                            <span class="time">22:10</span>
-                            <span class="visualized material-icons">done_all</span>
-                        </span>
-                    </p>
-                </div>
 
         </div>
 
         <footer>
             <div class="case-send">
-                <div class="input-container">
-                    <button class="material-icons">face</button>
-                    <input type="text" ></input>
-                    <button class="material-icons">attach_file</button>
-                    <button class="material-icons">camera</button>
-                </div>
-                <button class="fab"><i class="material-icons">mic</i></button>
+                <form id="form">
+                    <div class="input-container">
+                        <button class="material-icons">face</button>
+                        <input type="text" name="message"></input>
+                        <button class="material-icons">attach_file</button>
+                        <button class="material-icons">camera</button>
+                    </div>
+                    <button class="fab"><i class="material-icons">mic</i></button>
+                </form>
+
             </div>
         </footer>
     </div>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
