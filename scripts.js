@@ -1,5 +1,5 @@
 
-var socket = io('http://192.168.0.15:3000');
+var socket = io('https://whatsapp-socketio-david.herokuapp.com/');
 
 const chat = document.querySelector('#chat');
 const form = document.querySelector('#form');
